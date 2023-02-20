@@ -16,19 +16,35 @@ class MyArray {
     return this.length;
   }
   pop() {
-    let val = this.data[this.length-1];
-    this.data[this.length-1] = undefined;
+    const lastItem = this.data[this.length - 1];
+    delete this.data[this.length - 1];
     this.length--;
-    return val;
+    return lastItem;
+  }
+
+  delete(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+    return item;
+  }
+
+  shiftItems(index) {
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
   }
 }
 
 const myNewArray = new MyArray();
-myNewArray.push(1);
-myNewArray.push(2);
+myNewArray.push("hello");
+myNewArray.push(",");
+myNewArray.push("world");
+myNewArray.push("!");
 document.getElementById("output").innerHTML = `<h2>${JSON.stringify(
   myNewArray
 )}</h2>`;
 console.log(myNewArray.get(1));
 console.log(myNewArray.pop());
+console.log(myNewArray.delete(1));
 console.log(myNewArray);
