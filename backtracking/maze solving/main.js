@@ -17,8 +17,7 @@ const solveMaze = (maze) => {
     if (visited[row][col]) {
       return false;
     }
-    if (row === n - 1 && col === n - 1) {
-      //traversal happens from 0,0 to n,n
+    if (maze[row][col] === "@") {
       path.push([row, col]);
       return true;
     }
@@ -44,7 +43,7 @@ const maze = [
   ["*", "*", "#", "#", "*"],
   ["*", "*", "*", "#", "*"],
   ["#", "#", "*", "*", "*"],
-  ["*", "*", "*", "#", "*"],
+  ["@", "*", "*", "#", "*"],
   ["#", "#", "#", "*", "*"],
 ];
 
