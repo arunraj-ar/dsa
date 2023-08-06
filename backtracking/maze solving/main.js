@@ -1,4 +1,4 @@
-const solveMaze = (maze) => {
+const solveMaze = (maze,x,y) => {
   const n = maze.length;
   const path = [];
 
@@ -34,7 +34,7 @@ const solveMaze = (maze) => {
     return false;
   };
 
-  solve(0, 0);
+  solve(x, y);
 
   return path.length > 0 ? path : [];
 };
@@ -47,4 +47,4 @@ const maze = [
   ["#", "#", "#", "*", "*"],
 ];
 
-console.log(solveMaze(maze));
+console.log(solveMaze(maze,1,1));
