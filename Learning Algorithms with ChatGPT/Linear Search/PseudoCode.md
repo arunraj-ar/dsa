@@ -1,4 +1,5 @@
 # Pseudo Code
+
 ```
 function linearSearch(arr, target):
     for each item in arr:
