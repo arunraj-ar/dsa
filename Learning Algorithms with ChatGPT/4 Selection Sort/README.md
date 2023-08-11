@@ -11,5 +11,5 @@ function selectionSort(arr):
             if arr[j] < arr[minIndex]:
                 minIndex = j
 
-        swap(arr[j],arr[minIndex])
+        swap(arr[i],arr[minIndex])
 ```
