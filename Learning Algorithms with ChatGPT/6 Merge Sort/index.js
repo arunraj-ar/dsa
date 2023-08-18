@@ -3,21 +3,19 @@ const mergeSort = (arr) => {
     return arr;
   }
   let middle = Math.floor(arr.length / 2);
-  let left = mergeSort(arr.slice(middle));
+  let left = mergeSort(arr.slice(0, middle));
   let right = mergeSort(arr.slice(middle, arr.length));
 
-  return mergeSort(left, right);
+  return merge(left, right);
 };
 
 const merge = (left, right) => {
-  const result = [];
+  let result = [];
   while (!!left[0] && !!right[0]) {
     if (left[0] <= right[0]) {
-      // console.log('pushing', left[0]);
       result.push(left[0]);
       left.shift();
     } else {
-      //console.log("pushing", right[0]);
       result.push(right[0]);
       right.shift();
     }
