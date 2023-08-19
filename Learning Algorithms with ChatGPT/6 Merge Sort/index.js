@@ -11,7 +11,7 @@ const mergeSort = (arr) => {
 
 const merge = (left, right) => {
   let result = [];
-  while (!!left[0] && !!right[0]) {
+  while (typeof left[0] !== "undefined" && typeof right[0] !== "undefined") {
     if (left[0] <= right[0]) {
       result.push(left[0]);
       left.shift();
