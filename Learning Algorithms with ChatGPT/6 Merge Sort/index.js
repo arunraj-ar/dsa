@@ -4,7 +4,7 @@ const mergeSort = (arr) => {
   }
   let middle = Math.floor(arr.length / 2);
   let left = mergeSort(arr.slice(0, middle));
-  let right = mergeSort(arr.slice(middle, arr.length));
+  let right = mergeSort(arr.slice(middle));
 
   return merge(left, right);
 };
@@ -19,14 +19,11 @@ const merge = (left, right) => {
       result.push(right[0]);
       right.shift();
     }
-
-    result = result.concat(left, right);
   }
-
-  return result;
+  return result.concat(left, right);
 };
 
 // example
 
-const unsortedArray = [12, 11, 13, 5, 6, 7];
+const unsortedArray = [12, 11, 13, 5, 6, 7, 0, -13];
 console.log(mergeSort(unsortedArray));
