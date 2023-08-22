@@ -43,6 +43,6 @@ const binarySearch2 = (arr, target) => {
 
 //example
 
-const sortedArr = [1, 3, 5, 7, 9, 11, 13, 15, 17];
+const sortedArr = [-1, 0, 1, 3, 5, 7, 9, 11, 13, 15, 17];
 const tgt = 15;
 console.log(binarySearch2(sortedArr, tgt));
