@@ -32,7 +32,7 @@ const bubbleSort2 = (arr) => {
   return arr;
 };
 
-
 // example
 
-console.log(bubbleSort2(unsortedArray));
+const unsortedArr = [64, 34, 25, 12, 22, -100, 11, 90, 0, -5, 8, -5, 0, 12];
+console.log(bubbleSort2(unsortedArr));
