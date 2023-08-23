@@ -13,14 +13,15 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
-//example
+// example
 
 const unsortedArray = [64, 34, 25, 12, 22, -100, 11, 90, 0];
 console.log(bubbleSort(unsortedArray));
 
+// revising
+
 const bubbleSort2 = (arr) => {
   const n = arr.length;
-
   for (let i = 0; i < n; i++) {
     for (let j = i + 1; j < n; j++) {
       if (arr[i] > arr[j]) {
@@ -31,5 +32,7 @@ const bubbleSort2 = (arr) => {
   return arr;
 };
 
+
+// example
 
 console.log(bubbleSort2(unsortedArray));
