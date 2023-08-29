@@ -27,3 +27,15 @@ const merge = (left, right) => {
 
 const unsortedArray = [12, 11, 13, 5, 6, 7, 0, -13];
 console.log(mergeSort(unsortedArray));
+
+// revising
+
+const mergeSort2 = (arr) => {
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  let middle = Math.floor(arr.length / 2);
+  let left = merge(arr.slice(0, middle));
+  let right = merge(arr.slice(middle));
+};
