@@ -7,7 +7,7 @@
 1. Insertion Sort :heavy_check_mark:
 1. Merge Sort :heavy_check_mark:
 1. Quick Sort :heavy_check_mark:
-2. Heap Sort
+1. Heap Sort
 1. Counting Sort
 1. Radix Sort
 1. Hashing (implementing a basic hash table)
