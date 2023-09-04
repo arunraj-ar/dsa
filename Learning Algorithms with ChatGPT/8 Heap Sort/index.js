@@ -13,12 +13,25 @@ const heapify = (arr, i, n) => {
 
   if (largest !== i) {
     [arr[i], arr[largest]] = [arr[largest], arr[i]];
-    heapify(arr, n, largest);
+    heapify(arr,  largest, n);
+  }
+};
+
+const heapSort = (arr) => {
+  let n = arr.length;
+
+  for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+    heapify(arr, i, n);
+  }
+
+  for (let i = n - 1; i > 0; i--) {
+    [arr[0], arr[i]] = [arr[i], arr[0]];
+    heapify(arr, 0, i);
   }
 };
 
 // example
 
-const unsortedArray = [12, 11, 13, 5, 6, 7];
-heapify(unsortedArray);
+const unsortedArray = [12, 11, 13, 5, 6, 7, -1, 0, -1, 0, 1, 1];
+heapSort(unsortedArray);
 console.log(unsortedArray);
