@@ -14,19 +14,19 @@ function heapify(arr, i, n):
 
     if largest != i
         swap(arr[i], arr[largest])
-        heapify(arr, n, largest)
+        heapify(arr, largest, n)
 
     
 function heapSort(arr):
     n = arr.length
 
     for i from n/2 - 1 to 0:
-        heapify(arr, n, i)
+        heapify(arr, i, n)
     
 
     for i from n - 1 to 1:
         swap (arr[0], arr[i])
-        heapify(arr, i, 0)
+        heapify(arr, 0, i)
 
 
 ```
