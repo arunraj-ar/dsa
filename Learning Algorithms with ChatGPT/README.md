@@ -8,7 +8,7 @@
 1. Merge Sort :heavy_check_mark:
 1. Quick Sort :heavy_check_mark:
 1. Heap Sort :heavy_check_mark:
-1. Counting Sort
+1. Counting Sort :heavy_check_mark:
 1. Radix Sort
 1. Hashing (implementing a basic hash table)
 1. Breadth-First Search (BFS)
