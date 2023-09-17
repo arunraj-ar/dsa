@@ -15,7 +15,7 @@ function countingSort(arr, exp):
     
     for i from n - 1 down to 0:
         index = (arr[i] / exp) % 10
-        output[count[index] - 1] - arr[i]
+        output[count[index] - 1] = arr[i]
         count[index]--
     
     for i from 0 to n - 1
