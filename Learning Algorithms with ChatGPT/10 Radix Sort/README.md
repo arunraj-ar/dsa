@@ -6,7 +6,7 @@ function countingSort(arr, exp):
     output = new Array(n)
     count = new Array(10).fill(0)
 
-    fot i from 0 to n - 1:
+    for i from 0 to n - 1:
         index = (arr[i] / exp) % 10
         count[index]++
     
