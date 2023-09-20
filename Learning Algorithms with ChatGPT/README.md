@@ -1,7 +1,7 @@
 # Learning and implementing 25 Algorithms with the help of ChatGPT
 
 1. Linear Search :heavy_check_mark::heavy_check_mark::heavy_check_mark:
-1. Binary Search :heavy_check_mark::heavy_check_mark:
+1. Binary Search :heavy_check_mark::heavy_check_mark::heavy_check_mark:
 1. Bubble Sort :heavy_check_mark::heavy_check_mark:
 1. Selection Sort :heavy_check_mark::heavy_check_mark:
 1. Insertion Sort :heavy_check_mark::heavy_check_mark:
