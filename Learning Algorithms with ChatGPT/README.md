@@ -2,7 +2,7 @@
 
 1. Linear Search :heavy_check_mark::heavy_check_mark::heavy_check_mark:
 1. Binary Search :heavy_check_mark::heavy_check_mark::heavy_check_mark:
-1. Bubble Sort :heavy_check_mark::heavy_check_mark:
+1. Bubble Sort :heavy_check_mark::heavy_check_mark::heavy_check_mark:
 1. Selection Sort :heavy_check_mark::heavy_check_mark:
 1. Insertion Sort :heavy_check_mark::heavy_check_mark:
 1. Merge Sort :heavy_check_mark:
