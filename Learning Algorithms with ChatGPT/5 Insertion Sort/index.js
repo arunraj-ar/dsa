@@ -41,4 +41,4 @@ const insertionSort2 = (arr) => {
 // example
 
 const unsortedArr = [12, 11, 13, 5, 6, 0, -14, 0, -2, -2];
-console.log(insertionSort(unsortedArr));
+console.log(insertionSort2(unsortedArr));
