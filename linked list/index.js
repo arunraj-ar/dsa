@@ -60,7 +60,7 @@ class LinkedList {
     for (let i = 0; i < index - 1; i++) {
       if (node.next) {
         node = node.next;
-      } else{
+      } else {
         break;
       }
     }
@@ -68,13 +68,13 @@ class LinkedList {
   }
 
   insert(value, index) {
-    if(index === 0){
-        this.prepend(value);
-        this.length++;
-        return;
+    if (index === 0) {
+      this.prepend(value);
+      this.length++;
+      return;
     }
     let newNode = this.newNode(value);
-    const node = this.getNodeBefore(index)
+    const node = this.getNodeBefore(index);
     newNode.next = node.next;
     node.next = newNode;
     this.length++;
@@ -92,10 +92,10 @@ class LinkedList {
   }
 
   delete(index) {
-    if(index===0){
-        this.head=this.head.next;
-        this.length--;
-        return;
+    if (index === 0) {
+      this.head = this.head.next;
+      this.length--;
+      return;
     }
     const node = this.getNodeBefore(index);
     if (node.next) {
@@ -104,7 +104,23 @@ class LinkedList {
       node.next = null;
     }
     this.length--;
+  }
 
+  reverse() {
+    if (!this.head.next) {
+      return this;
+    }
+    let first = this.head;
+    let second = first.next;
+    while (second) {
+      const third = second.next;
+      second.next = first;
+      first = second;
+      second = third;
+    }
+    this.head.next = null;
+    this.head = first;
+    return this;
   }
 }
 
@@ -122,5 +138,5 @@ myLinkedList.delete(0);
 myLinkedList.delete(6);
 myLinkedList.delete(6);
 
-
 console.log(myLinkedList.printList());
+console.log(myLinkedList.reverse().printList());
