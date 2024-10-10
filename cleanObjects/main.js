@@ -48,3 +48,4 @@ const removeFalsy = (inp) => {
 console.log(removeFalsy([null, 0, false, 1, true]))
 console.log(removeFalsy([null, 0, [1, null, ,5], true]))
 console.log(removeFalsy({a:null, b: 3, c: {a:[1,0,2,,]}}))
+console.log(removeFalsy({a:null, b: {c: null, d:{x: 5, y: 0}}}))
