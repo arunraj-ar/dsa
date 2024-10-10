@@ -20,29 +20,31 @@
 const removeFalsy = (inp) => {
     if(!inp) return;
 
-    let result=[]
+    let resultArr=[]
+    let resultObj = {}
     if(typeof inp === 'object'){
         if(Array.isArray(inp)){
             for(let item of inp) {
                 if(item) {
                     if(Array.isArray(item)){
-                        result.push(removeFalsy(item))
+                        resultArr.push(removeFalsy(item))
                     } else {
-                        result.push(item)
+                        resultArr.push(item)
                     }
                 }
             }
         } else {
             for(let item of Object.keys(inp)) {
-                if(inp[item]) {}
-                result[item]= removeFalsy(inp[item])
+                if(inp[item]) {
+                    resultObj[item]= removeFalsy(inp[item])
+                }
             }
         }
     }
 
-    return result;
+    return resultArr.length>0 ? resultArr : (Object.keys(resultObj).length>0 ? resultObj : inp);
 }
 
 console.log(removeFalsy([null, 0, false, 1, true]))
 console.log(removeFalsy([null, 0, [1, null, ,5], true]))
-console.log(removeFalsy({a:null, b: 3}))
+console.log(removeFalsy({a:null, b: 3, c: {a:[1,0,2,,]}}))
