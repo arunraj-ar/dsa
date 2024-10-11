@@ -40,7 +40,17 @@ while (charIdx<STR.length){
     }
 }
 
-console.log(grid)
+let res = ''
+
+for(let row of grid) {
+    for (let item of row){
+        if(item !== ' '){
+            res+=item
+        }
+    }
+}
+
+console.log(grid, res)
     
 
 
