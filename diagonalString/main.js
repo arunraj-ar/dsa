@@ -1,6 +1,14 @@
 // Input: 
-// STR = FLIPKARTISHIRING
-// ROW = 4
+const STR = 'FLIPKARTISHIRING'
+const ROW = 4
+
+
+
+// F           R           R    
+// L       A   T       I   I
+// I   K       I   H       N 
+// P           S           G  
+
 
 // Output: FRRLATIIIKIHNPSG
 
@@ -27,13 +35,7 @@ const diagonalTraversal = (str, ROW) => {
 }
 
 
-const STR = 'FLIPKARTISHIRING'
-const ROW = 4
 console.log(diagonalTraversal(STR, ROW))
     
 
 
-// F           R           R    
-// L       A   T       I   I
-// I   K       I   H       N 
-// P           S           G  
