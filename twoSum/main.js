@@ -14,4 +14,4 @@ const twoSum = (arr) => {
 }
 
 const numbers = [3, -3, 1, 2, -2, -1, 3, -3, -1, 1, 0, 0, 2, -2, -2];
-console.log(twoSum(numbers));
+console.log(twoSum(numbers));//
